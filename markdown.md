@@ -10,7 +10,7 @@
 3. [Canvas](https://canvas.ucsd.edu/)
 
 **Random picture that I generated from a website**
-![Pic](https://cdn.pixabay.com/photo/2016/01/13/03/35/harold-lloyd-1137109_960_720.jpg)<img src="drawing.jpg" alt="drawing" width="200"/>
+![Pic]<img src="https://cdn.pixabay.com/photo/2016/01/13/03/35/harold-lloyd-1137109_960_720.jpg" alt="drawing" width="200"/>
 
 *Iconic quote from Professor Miranda:*
 > Welcome to CSE 12 pre-recorded lecture.
