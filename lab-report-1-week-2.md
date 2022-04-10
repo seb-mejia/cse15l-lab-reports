@@ -61,9 +61,11 @@ Let's try it out with scp. In the terminal, type in `scp WhereAmI.java cs15lsp22
 
 ![(Special Containment Procedures)](https://user-images.githubusercontent.com/90715607/162534605-d2638149-47c5-4b89-a2b4-6421c9d842d7.png)
 
-Log into the server once again via `cs15lsp22XXX@ieng6.ucsd.edu`. If you enter `ls` in the terminal, you will see WhereAmI.java in the server's home directory. Success! While you're still logged into the server, use `javac WhereAmI.java` and `java WhereAmI` to run this file on the ieng6 computer. Notice anything different?
+Log into the server once again via `ssh cs15lsp22XXX@ieng6.ucsd.edu`. If you enter `ls` in the terminal, you will see WhereAmI.java in the server's home directory. Success! While you're still logged into the server, use `javac WhereAmI.java` and `java WhereAmI` to run this file on the ieng6 computer. Notice anything different?
 
 ![FireShot Capture 006 - CSE15L Lab Team Nubian Goat - Google Docs - docs google com](https://user-images.githubusercontent.com/90715607/162535392-f41051ca-7360-4840-881f-172834c8de12.png)
+
+If done correctly, you should get different information related to the server itself.
 
 **Step V. Setting an SSH Key**
 
