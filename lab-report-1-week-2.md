@@ -73,9 +73,15 @@ Guess what? `ssh` keys are here to make your life much easier!
 
 These keys work thanks to a program called `ssh-keygen`, which creates a pair of files (public key and private key). The public key gets copied onto the server, while the private key is stored on the client (your computer). Once done, the `ssh` command will use this pair of files instead of your password.
 
+![Capture](https://user-images.githubusercontent.com/90715607/162536456-f49119b7-d938-4b3e-ac8d-1023e51e584c.PNG)
 
+Doing so will create a private key (in a file `id_rsa`) and public key (in a file `id_rsa.pub`) stored in the `.ssh` directory on your computer.
 
+As stated above, the private key is meant to be stored on your computer. However, we need to transfer the public key to the server. Let's move this file to the `.ssh` directory of your account on the server.
 
+Log into the server, and use ``mkdir .ssh`` to make the .ssh directory on the server. This will either create the directory, or you will get a notification that it already exists.
+
+Afterwards, log out of the server. Now that you're back on the client, 
 
 
 
