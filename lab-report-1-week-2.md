@@ -69,23 +69,35 @@ If done correctly, you should get different information related to the server it
 
 **Step V. Setting an SSH Key**
 
-Wow...this is so tedious and boring, right? If only there were a faster way to log into the server or run scp.
+Wow...copy-pasing the password is so tedious and boring, right? If only there were a faster way to log into the server or run scp.
 
 Guess what? `ssh` keys are here to make your life much easier!
 
 These keys work thanks to a program called `ssh-keygen`, which creates a pair of files (public key and private key). The public key gets copied onto the server, while the private key is stored on the client (your computer). Once done, the `ssh` command will use this pair of files instead of your password.
 
+Enter `ssh-keygen` into the terminal. When asked which file to save the key in, enter `C:\Users\ZZZ/.ssh/id_rsa`.
+
+You will be prompted to enter a passphrase. Do NOT enter a passphrase.
+
 ![Capture](https://user-images.githubusercontent.com/90715607/162536456-f49119b7-d938-4b3e-ac8d-1023e51e584c.PNG)
 
-Doing so will create a private key (in a file `id_rsa`) and public key (in a file `id_rsa.pub`) stored in the `.ssh` directory on your computer.
+The program will then create a private key (in a file `id_rsa`) and public key (in a file `id_rsa.pub`) stored in the `.ssh` directory on your computer.
 
-As stated above, the private key is meant to be stored on your computer. However, we need to transfer the public key to the server. Let's move this file to the `.ssh` directory of your account on the server.
+Recall that the private key is meant to be stored on your computer. However, we need to transfer the public key to the server. Let's move this file to the `.ssh` directory of your account on the server.
 
-Log into the server, and use ``mkdir .ssh`` to make the .ssh directory on the server. This will either create the directory, or you will get a notification that it already exists.
+Log into the server, and use `mkdir .ssh` to make the .ssh directory on the server. This will either create the directory, or you will get a message that it already exists.
 
-Afterwards, log out of the server. Now that you're back on the client, 
+Afterwards, log out of the server. Now that you're back on the client, enter the following command.
 
+`scp /Users/ZZZ/.ssh/id_rsa.pub cs15lsp22XXX@ieng6.ucsd.edu:~/.ssh/authorized_keys`
 
+Note: ZZZ and XXX should be replaced by your computer username and your CSE 15L account username respectively.
+
+After completing these steps, you will be able to use `ssh` and `scp` without entering your password.
+
+![Capture1](https://user-images.githubusercontent.com/90715607/162630381-613f1ccb-0e07-4db8-9e68-3211c1c50bec.PNG)
+
+**Step VI. Optimizing Remote Running**
 
 Trash
 ![image](https://user-images.githubusercontent.com/90715607/162268012-9e693061-13d6-495c-ae77-f277c7b65577.png)
