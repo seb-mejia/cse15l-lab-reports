@@ -99,3 +99,26 @@ After completing these steps, you will be able to use `ssh` and `scp` without en
 
 **Step VI. Optimizing Remote Running**
 
+But we can go even farther, right?
+
+Let's think of how we can use what we've learned to locally edit `WhereAmI.java`, then copy it to the server, and finally run it.
+
+* First, edit the file on your client as needed.
+* Next, thanks to SSH keys, simply entering `ssh cs15lsp22XXX@ieng6.ucsd.edu` will log you into the server.
+* Then, you want to send WhereAmI.java to the server with `scp`.
+* You will want to compile the file with `javac` before running it.
+* Finally, you can run the file with `java`.
+
+Still too overwhelming? We can condense the process by using semicolons and quotation marks.
+
+After writing down `ssh`, you can use quotes to directly run a command on the remote server. If you wanted to transfer a file to a server right after logging into it, you would include `scp` on the same line like so: `ssh cs15lsp22XXX@ieng6.ucsd.edu "scp [...]"`
+
+In addition, you can use the semicolon to run multiple commands at the same time. If you want to compile WhereAmI.java AND run it on the same line, you would do the following: `javac WhereAmI.java; java WhereAmI`
+
+With that said, you need two steps to complete the pocess.
+1. Make a change to WhereAmI.java, then save the file.
+2. Enter in the terminal: `ssh cs15lsp22XXX@ieng6.ucsd.edu "scp WhereAmI.java cs15lsp22XXX@ieng6.ucsd.edu; javac WhereAmI.java; java WhereAmI"`
+
+![Screenshot (2235)](https://user-images.githubusercontent.com/90715607/162645615-7954c19c-b605-43e5-a0d2-20997b6a46f1.png)
+
+Voilla! Don't you feel like a wizard?
