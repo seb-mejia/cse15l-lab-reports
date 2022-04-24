@@ -14,6 +14,8 @@ https://github.com/TheSeb72/markdown-parser/blob/main/far%20apart.md
 
 ![OutOfMemoryError](https://user-images.githubusercontent.com/90715607/164957021-ec8d6fb6-a2c4-4034-9f63-0c4f362637f3.PNG)
 
-**Explanation:
+**Explanation:**
+
+In the original code, we always add the characters (the website) between the parentheses () to toReturn, and set currentIndex to the character after the parentheses. However, in the fixed code, we only add the website if the parentheses DIRECTLY FOLLOW the brackets. If the parentheses do not directly follow the brackets, then we simply increase the current index ```currentIndex++;`` until the parentheses are reached.
 
 ## Code change 2:
