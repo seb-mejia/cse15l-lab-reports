@@ -1,5 +1,3 @@
-https://docs.google.com/document/d/14SJ2qRuxBCfOXxI1-dPo3KTOvd4bmM0K25GyVtfXLrU/edit
-
 ## Code change 1:
 
 **Code change diff:**
@@ -39,3 +37,18 @@ Although this is an image reference, the code is treating it like it's a website
 ## Code change 3:
 
 **Code change diff:**
+
+![diff 3](https://user-images.githubusercontent.com/90715607/165013644-2ff502e3-d78a-4802-9a30-779d212cab40.PNG)
+
+**Failure-inducing input:**
+
+https://github.com/TheSeb72/markdown-parser/blob/main/Empty.md
+
+**Symptom:**
+
+![Empty](https://user-images.githubusercontent.com/90715607/165013730-8d3c9ecb-a7e6-4751-9375-129fba82b7ea.PNG)
+
+**Explanation:**
+
+As one can see from the failure-inducing input link, including a markdown link with an empty website displays nothing. Therefore, this should not be added to the list of toReturn, yet it is added. However, we can prevent this by adding another && condition: ```&&
+            		markdown.substring(openParen + 1, closeParen).length() > 0``` to ensure that empty "websites" are never added.
