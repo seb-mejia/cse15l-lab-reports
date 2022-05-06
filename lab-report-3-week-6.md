@@ -5,8 +5,8 @@ Instructions page: https://docs.google.com/document/d/1u_IB3nJrXeve0HvcD1BNMa27y
 In this lab report, we will be using Windows as the operating system.
 
 ## Streamlining ssh Configuration
-While logging into ssh, don't you find it tedious to enter the entire ieng6 email account?
-Luckily...there's a shortcut to avoid entering that.
+When logging into ssh, don't you find it tedious to enter the entire ieng6 email account?
+Luckily...there's a shortcut to avoid entering that. I will demonstrate how to streamline your ssh configuration.
 
 In File Explorer, change your directory so that you are in ~/.ssh/
 
