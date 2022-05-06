@@ -97,7 +97,11 @@ Now, let's test these files by logging into the server and compiling/testing the
 
 Looks pretty good! Our MarkdownParse and MarkdownParseTest files were both able to compile and run on the server successfully.
 
+As we had done in week 1, we can combine `scp`, `;`, and `ssh` to copy our markdown-parser directory, and run it remotely in one line!
 
-* Show copying your whole markdown-parse directory to your ieng6 account.
-* Show logging into your ieng6 account after doing this and compiling and running the tests for your repository.
-* Show (like in the last step of the first lab) combining scp, ;, and ssh to copy the whole directory and run the tests in one line.
+Using this code:
+`scp -r . ieng6:~/markdown-parser; ssh ieng6 "cd markdown-parser; /software/CSE/oracle-java-17/jdk-17.0.1/bin/javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java;/software/CSE/oracle-java-17/jdk-17.0.1/bin/java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest"`
+
+![brainfuck](https://user-images.githubusercontent.com/90715607/167174832-c754664e-8ac0-4c11-b483-e6e5b4501da0.PNG)
+
+Voila! I bet you feel like even MORE of a wizard now!
