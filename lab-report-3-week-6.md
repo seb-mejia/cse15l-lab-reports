@@ -2,14 +2,39 @@
 Lab 5 writeup: https://docs.google.com/document/d/17VpvLYf71mvpnjsJPhGfKCTBG9XWpWwpJpDk9NBpuiE/edit
 Instructions page: https://docs.google.com/document/d/1u_IB3nJrXeve0HvcD1BNMa27yw6uMX4Jz7PXU_xIMP4/edit#
 
-In this lab report, you will implement all Group Choice Options (1-3) from Lab 5.
-Complete them for yourself (if you haven’t already), and take the relevant screenshots listed below. 
-Create a post with a few sentences of description about all the options available. 
+In this lab report, we will be using Windows as the operating system.
 
 ## Streamlining ssh Configuration
-* Show your .ssh/config file, and how you edited it (with VScode, another program, etc)
-* Show the ssh command logging you into your account using just the alias you chose.
-* Show an scp command copying a file to your account using just the alias you chose.
+While logging into ssh, don't you find it tedious to enter the entire ieng6 email account?
+Luckily...there's a shortcut to avoid entering that.
+
+In File Explorer, change your directory so that you are in ~/.ssh/
+
+When you enter this directory, there most likely won't be a file named "config".
+Create a file named config, with no file extension.
+
+![config pic](https://user-images.githubusercontent.com/90715607/167046311-3939f82c-8957-4a00-a684-142e5c10d9fc.PNG)
+
+Now, you want to edit this config file. Here are the following steps to streamline your ssh configuration.
+1. Double click the file
+2. When prompted, open it in Notepad
+3. Insert the following text in the file:
+```
+Host ieng6
+    HostName ieng6.ucsd.edu
+    User cs15lsp22zzz
+```
+*Note: zzz is your personal code*
+
+Afterwards, save the file and close it. Open Visual Studio code so we can access the server.
+
+If done successfully, you should only have to enter ```ssh ieng6``` in the terminal to access the server.
+
+![ssh](https://user-images.githubusercontent.com/90715607/167046709-9c0fb6eb-c8f1-495a-922a-f0618a55f997.PNG)
+
+This shortcut makes it easier to use server-related commands, such as scp to transfer from your local repository to the server!
+
+![scp](https://user-images.githubusercontent.com/90715607/167047640-0dc6bc36-a81e-47d1-9ee7-168891f16720.PNG)
 
 ## Setup Github Access from ieng6
 * Show where the public key you made is stored on Github and in your user account (screenshot).
