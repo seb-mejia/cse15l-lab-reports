@@ -76,6 +76,22 @@ Woo-hoo!
 Here is a link to the commit: https://github.com/TheSeb72/random-code/commit/1ff6eb30954273b8947dd4b249fef8c0c97555c1
 
 ## Copy whole directories with scp -r
+Recently, we've been working with lots of files.
+If you wanted to copy everything from markdown-parser to the ssh server, you COULD use scp for each individual file. But that would be really tedious.
+What if, we could copy the entire directory to the server? Thankfully we can do this with recursive copying!
+
+If we are in the markdown-parser directory of our local repository, we can copy this directory to the server with the following code:
+
+`scp -r . ieng6:~/markdown-parser`
+
+![recursive copy](https://user-images.githubusercontent.com/90715607/167171745-7228e192-7acc-4925-9071-a76c8d18dea6.PNG)
+
+Some important notes:
+* `-r` to recursively transfer files
+* `.` the directory we want to copy (. refers to the current directory)
+* `~/markdown-parser` the name of the new directory that we're copying to
+
+Thankfully this option 
 * Show copying your whole markdown-parse directory to your ieng6 account.
 * Show logging into your ieng6 account after doing this and compiling and running the tests for your repository.
 * Show (like in the last step of the first lab) combining scp, ;, and ssh to copy the whole directory and run the tests in one line.
