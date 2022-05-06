@@ -1,10 +1,7 @@
-(Personal use)
-Lab 5 writeup: https://docs.google.com/document/d/17VpvLYf71mvpnjsJPhGfKCTBG9XWpWwpJpDk9NBpuiE/edit
-Instructions page: https://docs.google.com/document/d/1u_IB3nJrXeve0HvcD1BNMa27yw6uMX4Jz7PXU_xIMP4/edit#
-
+## Week 2 Lab Report
 In this lab report, we will be using Windows as the operating system.
 
-## Streamlining ssh Configuration
+### Streamlining ssh Configuration
 When logging into ssh, don't you find it tedious to enter the entire ieng6 email account?
 Luckily...there's a shortcut to avoid entering that. I will demonstrate how to streamline your ssh configuration.
 
@@ -36,7 +33,7 @@ This shortcut makes it easier to use server-related commands, such as scp to tra
 
 ![scp](https://user-images.githubusercontent.com/90715607/167047640-0dc6bc36-a81e-47d1-9ee7-168891f16720.PNG)
 
-## Setup Github Access from ieng6
+### Setup Github Access from ieng6
 Although the key that we just set up is pretty useful, we still need to give it some adjustments.
 If you were to ```commit``` and ```push``` from the command line right now, you would get an error!
 
@@ -75,7 +72,7 @@ Woo-hoo!
 
 Here is a link to the commit: https://github.com/TheSeb72/random-code/commit/1ff6eb30954273b8947dd4b249fef8c0c97555c1
 
-## Copy whole directories with scp -r
+### Copy whole directories with scp -r
 Recently, we've been working with lots of files.
 If you wanted to copy everything from markdown-parser to the ssh server, you COULD use scp for each individual file. But that would be really tedious.
 What if, we could copy the entire directory to the server? Thankfully we can do this with recursive copying!
