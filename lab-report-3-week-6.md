@@ -91,7 +91,13 @@ Some important notes:
 * `.` the directory we want to copy (. refers to the current directory)
 * `~/markdown-parser` the name of the new directory that we're copying to
 
-Thankfully this option 
+Now, let's test these files by logging into the server and compiling/testing them.
+
+![remote MarkdownParseTest](https://user-images.githubusercontent.com/90715607/167172926-05c41207-0a58-49e3-82d4-4042bb02bd39.PNG)
+
+Looks pretty good! Our MarkdownParse and MarkdownParseTest files were both able to compile and run successfully.
+
+
 * Show copying your whole markdown-parse directory to your ieng6 account.
 * Show logging into your ieng6 account after doing this and compiling and running the tests for your repository.
 * Show (like in the last step of the first lab) combining scp, ;, and ssh to copy the whole directory and run the tests in one line.
