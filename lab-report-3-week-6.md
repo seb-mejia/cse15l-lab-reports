@@ -37,10 +37,43 @@ This shortcut makes it easier to use server-related commands, such as scp to tra
 ![scp](https://user-images.githubusercontent.com/90715607/167047640-0dc6bc36-a81e-47d1-9ee7-168891f16720.PNG)
 
 ## Setup Github Access from ieng6
-* Show where the public key you made is stored on Github and in your user account (screenshot).
-* Show where the private key you made is stored on your user account (but not its contents) as a screenshot.
-* Show running git commands to commit and push a change to Github while logged into your ieng6 account.
-* Show a link for the resulting commit.
+Although the key that we just set up is pretty useful, we still need to give it some adjustments.
+If you were to ```commit``` and ```push``` from the command line right now, you would get an error!
+
+Remember in the first lab report when we made a public/private key pair to remotely access the ssh server?
+
+If we want to set up Github access, we need to first find these keys.
+
+To view your public key on the ssh servers, perform the following commands:
+```
+ls -al ~/.ssh
+cat id_rsa.pub
+```
+This allows you to view the keypairs on the server. We are interested in the public key id_rsa.pub, which is why we use the `cat` command to view the contents of the key.
+
+![public key](https://user-images.githubusercontent.com/90715607/167159626-88f34528-7cbd-467d-909e-73769116df3f.PNG)
+
+We want to copy the contents of this key.
+
+Next, to add this SSH key to your GitHub account, open the following link: https://github.com/settings/keys
+
+Click "New SSH key", and create a new key with the content that you copied.
+
+![SSH key](https://user-images.githubusercontent.com/90715607/167168928-3df9b89b-dd0b-4052-8a9c-53cad82f5cce.PNG)
+
+I tested this key by creating a new repository named random-code with a file called HelloWorld.java.
+
+If you were to git clone the repository (via SSH), you can edit the Java file via `vim HelloWorld.java`.
+
+Once you've finished editing the file, use `git add` and `git commit -m"Reason goes here"`.
+
+With this key set up, you should now be able to use `git push origin main`.
+
+![git push origin main](https://user-images.githubusercontent.com/90715607/167169381-1eb80619-57dd-409d-9dfa-025fc866fb8d.PNG)
+
+Woo-hoo!
+
+Here is a link to the commit: https://github.com/TheSeb72/random-code/commit/1ff6eb30954273b8947dd4b249fef8c0c97555c1
 
 ## Copy whole directories with scp -r
 * Show copying your whole markdown-parse directory to your ieng6 account.
