@@ -95,7 +95,7 @@ Now, let's test these files by logging into the server and compiling/testing the
 
 ![remote MarkdownParseTest](https://user-images.githubusercontent.com/90715607/167172926-05c41207-0a58-49e3-82d4-4042bb02bd39.PNG)
 
-Looks pretty good! Our MarkdownParse and MarkdownParseTest files were both able to compile and run successfully.
+Looks pretty good! Our MarkdownParse and MarkdownParseTest files were both able to compile and run on the server successfully.
 
 
 * Show copying your whole markdown-parse directory to your ieng6 account.
