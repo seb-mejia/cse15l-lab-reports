@@ -1,4 +1,4 @@
-## Week 2 Lab Report
+## Week 6 Lab Report
 In this lab report, we will be using Windows as the operating system.
 
 ### Streamlining ssh Configuration
