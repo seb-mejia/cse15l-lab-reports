@@ -10,8 +10,8 @@ Luckily...there's a shortcut to avoid entering that. I will demonstrate how to s
 
 In File Explorer, change your directory so that you are in ~/.ssh/
 
-When you enter this directory, there most likely won't be a file named "config".
-Create a file named config, with no file extension.
+When you enter this directory, you will need to access the "config" file.
+If it doesn't exist, create a file named config (with no file extension).
 
 ![config pic](https://user-images.githubusercontent.com/90715607/167046311-3939f82c-8957-4a00-a684-142e5c10d9fc.PNG)
 
