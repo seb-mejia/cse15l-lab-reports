@@ -25,7 +25,7 @@ Host ieng6
 
 In my case, the config file looks like this.
 
-![config mine](https://user-images.githubusercontent.com/90715607/168334974-535309ae-6788-4c71-8c6c-9e611726727f.PNG)
+![configuration](https://user-images.githubusercontent.com/90715607/168382215-3d6b5a12-3fcf-4f07-85c2-12f9873327ef.PNG)
 
 Afterwards, save the file and close it. Open Visual Studio code so we can access the server.
 
