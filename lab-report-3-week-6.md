@@ -23,6 +23,10 @@ Host ieng6
 ```
 *Note: zzz is your personal code*
 
+In my case, the config file looks like this.
+
+![config mine](https://user-images.githubusercontent.com/90715607/168334974-535309ae-6788-4c71-8c6c-9e611726727f.PNG)
+
 Afterwards, save the file and close it. Open Visual Studio code so we can access the server.
 
 If done successfully, you should only have to enter ```ssh ieng6``` in the terminal to access the server.
