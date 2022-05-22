@@ -19,7 +19,7 @@ With the first snippet...
 [`code]`](ucsd.edu)
 ```
 
-We would expect the following array to be returned: ```["`google.com","google.com","ucsd.edu"]```
+We would expect the following array to be returned: ```["`google.com", "google.com", "ucsd.edu"]```
 
 ### Snippet 2
 
@@ -34,7 +34,7 @@ With the second snippet...
 
 ```
 
-We would expect the following array to be returned: `["a.com","a.com(())","example.com"]`
+We would expect the following array to be returned: `["a.com", "a.com(())", "example.com"]`
 
 
 ### Snippet 3
@@ -69,4 +69,4 @@ And then there's more text
 
 ```
 
-We would expect the following array to be returned: `["https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule"`
+We would expect the following array to be returned: `["https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule"]`
