@@ -52,6 +52,8 @@ My implementation failed this test. Here is the failure from JUnit:
 
 ![fail2](https://user-images.githubusercontent.com/90715607/169676196-92147d49-9bad-43e9-aa50-8cbee3b11bc6.PNG)
 
+My implementation could not be fixed with a single line change. We'd have to create a new if/else statement that rejects the website addition if there isn't a unique pairing of ( for every ).
+
 
 ### Snippet 3
 
