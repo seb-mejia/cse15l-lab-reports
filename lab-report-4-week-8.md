@@ -31,6 +31,12 @@ My implementation failed this test. Here is the failure from JUnit:
 
 My implementation could not be fixed with a single line change. We would have to create a new if/else statement that rejects the website addition if a ` appears before the []() pair, but not after it.
 
+The implementation that I reviewed failed this test. Here is the failure from JUnit:
+
+![reviewfail1](https://user-images.githubusercontent.com/90715607/169678890-84888895-72e0-40e0-a4de-e349689c6ff4.PNG)
+
+Similarly to my implementation of MarkdownParse, we cannot fix this implementation's error with a single line change. We would have to use if/else statements to set up a condition that rejects the website if it contains a `` "pair" where one ` is inside the []() pair, and the other is outside the []() pair.
+
 ### Snippet 2
 
 With the second snippet...
@@ -56,6 +62,11 @@ My implementation failed this test. Here is the failure from JUnit:
 
 My implementation could not be fixed with a single line change. We would have to create a new if/else statement that rejects the website addition if there isn't a unique pairing of ( for every ).
 
+The implementation that I reviewed failed this test. Here is the failure from JUnit:
+
+![reviewfail2](https://user-images.githubusercontent.com/90715607/169678902-485a893f-221d-4e1b-9c84-61fbb148d4b6.PNG)
+
+Similarly to my implementation of MarkdownParse, we cannot fix this implementation's error with a single line change. We need to create an if/else statement that checks for each ( corresponding to a ), and rejecting the website if any of the parentheses are unpaired.
 
 ### Snippet 3
 
@@ -100,3 +111,9 @@ My implementation failed this test. Here is the failure from JUnit:
 ![fail3](https://user-images.githubusercontent.com/90715607/169676218-612a998e-bd46-433f-a849-46a7195ddec4.PNG)
 
 My implementation could not be fixed with a single line change. I would have to make sure the brackets [] and parentheses () are both on the same line. I would also want to check that nested URLs aren't added to the array, since the last item in the array included a []() pair WITHIN an open parenthesis before it closed.
+
+The implementation that I reviewed failed this test. Here is the failure from JUnit:
+
+![reviewfail3](https://user-images.githubusercontent.com/90715607/169678908-90e917cf-2d07-473a-98b1-0305b2558dbc.PNG)
+
+Similarly to my implementation of MarkdownParse, we cannot fix this implementation's error with a single line change. We would have to add an if/else statement checking that the brackets[] and parentheses () are on the same line, which would be too complicated to fix in one line.
