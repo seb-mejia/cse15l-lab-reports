@@ -21,6 +21,10 @@ With the first snippet...
 
 We would expect the following array to be returned: ```["`google.com", "google.com", "ucsd.edu"]```
 
+The following tester can be used on this snippet.
+
+![image](https://user-images.githubusercontent.com/90715607/169675448-e6addd1c-e4a6-4ed9-a0c7-265f51f2051e.png)
+
 ### Snippet 2
 
 With the second snippet...
@@ -35,6 +39,10 @@ With the second snippet...
 ```
 
 We would expect the following array to be returned: `["a.com", "a.com(())", "example.com"]`
+
+The following tester can be used on this snippet.
+
+![tester2](https://user-images.githubusercontent.com/90715607/169675458-ccfaccd1-3c1c-4957-858f-71a7c8fe0b14.PNG)
 
 
 ### Snippet 3
@@ -70,3 +78,7 @@ And then there's more text
 ```
 
 We would expect the following array to be returned: `["https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule"]`
+
+The following tester can be used on this snippet.
+
+![tester3](https://user-images.githubusercontent.com/90715607/169675636-97771ae4-3391-4dc7-ac0a-e23cea907e5a.PNG)
