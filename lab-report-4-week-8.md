@@ -23,7 +23,7 @@ We would expect the following array to be returned: ```["`google.com", "google.c
 
 The following tester can be used on this snippet.
 
-![image](https://user-images.githubusercontent.com/90715607/169675448-e6addd1c-e4a6-4ed9-a0c7-265f51f2051e.png)
+![tester1](https://user-images.githubusercontent.com/90715607/169675937-7b782d48-38e6-400e-8f81-bca77722a9b2.PNG)
 
 ### Snippet 2
 
@@ -42,7 +42,7 @@ We would expect the following array to be returned: `["a.com", "a.com(())", "exa
 
 The following tester can be used on this snippet.
 
-![tester2](https://user-images.githubusercontent.com/90715607/169675458-ccfaccd1-3c1c-4957-858f-71a7c8fe0b14.PNG)
+![tester2](https://user-images.githubusercontent.com/90715607/169675943-5ae4db03-d60e-4c00-8240-2af4a9618aa8.PNG)
 
 
 ### Snippet 3
@@ -81,4 +81,4 @@ We would expect the following array to be returned: `["https://sites.google.com/
 
 The following tester can be used on this snippet.
 
-![tester3](https://user-images.githubusercontent.com/90715607/169675636-97771ae4-3391-4dc7-ac0a-e23cea907e5a.PNG)
+![tester3](https://user-images.githubusercontent.com/90715607/169675950-c8942d15-8400-4a90-969f-593e1be03fea.PNG)
