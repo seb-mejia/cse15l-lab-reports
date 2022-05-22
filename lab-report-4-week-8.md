@@ -25,6 +25,10 @@ The following tester can be used on this snippet.
 
 ![tester1](https://user-images.githubusercontent.com/90715607/169676047-adedeac1-33b0-46df-9a4b-eccde332abb2.PNG)
 
+My implementation failed this test. Here is the failure from JUnit:
+
+![fail1](https://user-images.githubusercontent.com/90715607/169676181-306cf701-5d6d-4c35-8250-46b0883f04b7.PNG)
+
 ### Snippet 2
 
 With the second snippet...
@@ -43,6 +47,10 @@ We would expect the following array to be returned: `["a.com", "a.com(())", "exa
 The following tester can be used on this snippet.
 
 ![tester2](https://user-images.githubusercontent.com/90715607/169676052-4eaf8989-21ff-4cba-8091-33ae1025acee.PNG)
+
+My implementation failed this test. Here is the failure from JUnit:
+
+![fail2](https://user-images.githubusercontent.com/90715607/169676196-92147d49-9bad-43e9-aa50-8cbee3b11bc6.PNG)
 
 
 ### Snippet 3
@@ -82,3 +90,7 @@ We would expect the following array to be returned: `["https://sites.google.com/
 The following tester can be used on this snippet.
 
 ![tester3](https://user-images.githubusercontent.com/90715607/169676061-9ea3dedb-a4c3-408e-a7fa-83439a152983.PNG)
+
+My implementation failed this test. Here is the failure from JUnit:
+
+![fail3](https://user-images.githubusercontent.com/90715607/169676218-612a998e-bd46-433f-a849-46a7195ddec4.PNG)
