@@ -19,7 +19,7 @@ With the first snippet...
 [`code]`](ucsd.edu)
 ```
 
-We would expect the following array to be returned: `["`google.com","google.com","ucsd.edu"]`
+We would expect the following array to be returned: ```["`google.com","google.com","ucsd.edu"]```
 
 ### Snippet 2
 
