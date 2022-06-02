@@ -50,5 +50,5 @@ Results: (provided and my MarkdownParser, respectively)
 
 ![Test 576 dingus](https://user-images.githubusercontent.com/90715607/171526689-7f5d65cc-56d4-4b30-8976-2450e210ca7c.PNG)
 
-This test failed on my MarkdownParse because of a StringIndexOutOfBoundsException. It attempted to
-end at index -1, which is impossible.
+This test failed on my MarkdownParse because of a StringIndexOutOfBoundsException. My implementation set the index
+of closeParen to -1. It then used -1 as the ending index for markdown.substring(), which is impossible.
