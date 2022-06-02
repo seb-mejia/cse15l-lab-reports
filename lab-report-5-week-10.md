@@ -44,11 +44,11 @@ Only the provided code was correct for this test.
 
 Expected result:
 
-![Test 576 dingus](https://user-images.githubusercontent.com/90715607/171526665-321edb27-8f99-4774-bba2-6f9ecb4837c2.PNG)![Test 576 dingus](https://user-images.githubusercontent.com/90715607/171526689-7f5d65cc-56d4-4b30-8976-2450e210ca7c.PNG)
+![Test 576](https://user-images.githubusercontent.com/90715607/171527012-27955ca4-3e64-4f1c-8777-e683fd9b312d.PNG)
 
 Results: (provided and my MarkdownParser, respectively)
 
-![Uploading Test 576 dingus.PNG…]()
+![Test 576 dingus](https://user-images.githubusercontent.com/90715607/171526689-7f5d65cc-56d4-4b30-8976-2450e210ca7c.PNG)
 
 This test failed on my MarkdownParse because of a StringIndexOutOfBoundsException. It attempted to
 end at index -1, which is impossible.
