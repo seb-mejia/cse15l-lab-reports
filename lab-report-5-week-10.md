@@ -36,7 +36,7 @@ To fix my MarkdownParse, I would have to add a break condition in the while loop
 terminates the program if it can't find a `()[]` combination, even when there is a
 mess of symbols. Otherwise, this creates an infinite loop where the while loop never ends.
 
-![bugged code](https://user-images.githubusercontent.com/90715607/171525339-cfa58d5e-2c98-441e-bb09-0fbb6ad18f45.PNG)
+![bugged code 12](https://user-images.githubusercontent.com/90715607/171527604-40420359-1686-4fcc-96fa-96d14d999c9a.PNG)
 
 ### Test File 577
 
@@ -52,3 +52,5 @@ Results: (provided and my MarkdownParser, respectively)
 
 This test failed on my MarkdownParse because of a StringIndexOutOfBoundsException. My implementation set the index
 of closeParen to -1. It then used -1 as the ending index for markdown.substring(), which is impossible.
+
+![bugged code 576](https://user-images.githubusercontent.com/90715607/171527592-a8964de0-7bd2-4d32-abc4-381741b6b096.PNG)
