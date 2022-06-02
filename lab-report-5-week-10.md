@@ -17,5 +17,38 @@ After that, I moved my MarkdownParse implementation into the repository that con
 
 `mv MyMarkdownParse.java cse15lsp22-markdown-parser`
 
-### Test
+### Test File 12
 
+Only the provided code was correct for this test.
+
+Expected result:
+
+![Test 12 dingus](https://user-images.githubusercontent.com/90715607/171524894-725a8a6b-adc8-4ec6-be2e-3768973a5c49.PNG)
+
+Results: (provided and my MarkdownParser, respectively)
+
+![Test 12](https://user-images.githubusercontent.com/90715607/171524901-4e0bf1d1-9f1d-4308-b300-37017a1a5c86.PNG)
+
+This test failed on my MarkdownParse because there are several symbols being used,
+and the pairs of `()` `[]` are separated from each other, confusing the MarkdownParse.
+
+To fix my MarkdownParse, I would have to add a break condition in the while loop that
+terminates the program if it can't find a `()[]` combination, even when there is a
+mess of symbols. Otherwise, this creates an infinite loop where the while loop never ends.
+
+![bugged code](https://user-images.githubusercontent.com/90715607/171525339-cfa58d5e-2c98-441e-bb09-0fbb6ad18f45.PNG)
+
+### Test File 577
+
+Only the provided code was correct for this test.
+
+Expected result:
+
+![Test 576 dingus](https://user-images.githubusercontent.com/90715607/171526665-321edb27-8f99-4774-bba2-6f9ecb4837c2.PNG)![Test 576 dingus](https://user-images.githubusercontent.com/90715607/171526689-7f5d65cc-56d4-4b30-8976-2450e210ca7c.PNG)
+
+Results: (provided and my MarkdownParser, respectively)
+
+![Uploading Test 576 dingus.PNG…]()
+
+This test failed on my MarkdownParse because of a StringIndexOutOfBoundsException. It attempted to
+end at index -1, which is impossible.
