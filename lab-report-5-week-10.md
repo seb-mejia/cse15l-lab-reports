@@ -19,6 +19,8 @@ After that, I moved my MarkdownParse implementation into the repository that con
 
 ### Test File 12
 
+[Link to test](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/12.md)
+
 Only the provided code was correct for this test.
 
 Expected result:
@@ -39,6 +41,8 @@ mess of symbols. Otherwise, this creates an infinite loop where the while loop n
 ![bugged code 12](https://user-images.githubusercontent.com/90715607/171527604-40420359-1686-4fcc-96fa-96d14d999c9a.PNG)
 
 ### Test File 577
+
+[Link to test](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/577.md)
 
 Only the provided code was correct for this test.
 
